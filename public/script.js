@@ -27,17 +27,6 @@ myBtn.addEventListener("click",(event) => {
 let sendBtn = document.getElementById("send-btn");
 
 
-/*sendBtn.addEventListener("click",(event) =>{
-    event.preventDefault();
-    let msgWritten =document.getElementById("sending-input").value;
-    let column =document.querySelector(".message-container");
-    column.innerHTML +=`
-        <div class="receiver-part">
-        <span>${msgWritten}</span>
-        </div>`;
-    });*/
-
-//new format of code------
 
    sendBtn.addEventListener("click",(event) =>{
         event.preventDefault();
@@ -116,48 +105,3 @@ socket.on("username left", (data) =>{
         }
        
    });
-
-/*const data ={
-    username: userName,
-    message: msgWritten */
-
-//emission,emit
-//emit the message to the watchman -> give message to watchman
-//socket.emit("chat message", data);
-// communicate with the watchman that a msg is sent to
-//addMessage(data, true);
-
-    /*let msgWritten =document.getElementById("sending-input").value;
-    let msgDiv = document.createElement("span");
-    msgDiv.innerText = msgWritten;
-   
-    document.querySelector(".message-container").appendChild(msgDiv);*/
-   
-   
-
-
-        // inform socket io                  
-
-
-//function addMessage(data, flag){
-     
-    //let column =document.querySelector(".message-container");
-    //column.innerText =`${data.username}: ${data.message}`;
-  //let msgDiv = document.createElement("div");
- // msgDiv.innerText =`${data.username}: ${data.message}`;
-    //if(flag){
-
-       // msgDiv.setAttribute("class", "sender-part")
-      /*  column.innerHTML +=`
-        <div class="receiver-part">
-        <span>${msgWritten}</span>
-        </div>`;*/
-    //}else{
-       // msgDiv.setAttribute("class","receiver-part")
-       /* column.innerHTML +=`
-        <div class="sender-part">
-        <span>${msgWritten}</span>
-        </div>`;*/
-  //  }
-   //  column.appendChild(msgDiv);
-//};*/
