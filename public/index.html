@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-Arena</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+    <form class="formUsername">
+        <p class="p1">Join ( ChAt-ArEnA )</p>
+        <p class="p2">Warning: join it at your own risk it may take your valuable time from your life...</p>
+        <label for="username-input">Username :</label>
+        <input class="in-1" type="text" id="username-input" placeholder="username" required>
+        <br>
+        <button id="add-user">Get into</button>
+    </form>
+    <div class="chatRoom">
+        <div class="chatRoom-header"><h1>ChAt-Room....</h1></div>
+        <span class="material-symbols-outlined" id="closeBtn">
+            exit_to_app
+            </span>
+        <div class="message-container">
+            <!--<div class="sender-part"><span>Hi, I am a Bot</span></div> 
+            <div class="receiver-part"><span>Hello This side Kunal</span></div> -->
+        </div>
+        <div class="sending-msg">
+            <div><input id="sending-input" type="text" placeholder="Write Message...."></div>
+            <div id="send-btn"><button>Send</button></div>
+        </div>
+
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js" async defer></script>
+</body>
+</html>
